@@ -1,0 +1,9 @@
+
+function add(a,b,cb) {
+    let result =a+b;
+    cb(result)
+}
+
+console.log(add(1,2,(sum)=>{
+    console.log(sum)
+}))
