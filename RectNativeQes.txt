@@ -1,0 +1,12 @@
+1.how to detetct memory leaks.
+2.Difference between Flatlist and SectionList.
+3.React native debugging.
+4.firebase setup ,why we use firebase/analytics.
+5.How to do bridging in between android/IOS and js
+6.react architecture.
+7.is react native have real-dom.
+8.jest test.
+9.Flexbox.
+10.how to detetc vaunrabilities in your app , and libraires
+11.instead of righting view view what we can use to aviod repeation.
+12.watchman working in react native

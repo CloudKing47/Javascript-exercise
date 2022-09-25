@@ -1240,27 +1240,42 @@
 
 // console.log(coo(str,str1))
 
-let findPermutations = (string) => {
-  if (!string || typeof string !== "string"){
-    return "Please enter a string"
-  } else if (string.length < 2 ){
-    return string
-  }
+// let findPermutations = (string) => {
+//   if (!string || typeof string !== "string"){
+//     return "Please enter a string"
+//   } else if (string.length < 2 ){
+//     return string
+//   }
 
-  let permutationsArray = [] 
+//   let permutationsArray = [] 
    
-  for (let i = 0; i < string.length; i++){
-    let char = string[i]
+//   for (let i = 0; i < string.length; i++){
+//     let char = string[i]
 
-    if (string.indexOf(char) != i)
-    continue
+//     if (string.indexOf(char) != i)
+//     continue
 
-    let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
+//     let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
 
-    for (let permutation of findPermutations(remainingChars)){
-      permutationsArray.push(char + permutation) }
+//     for (let permutation of findPermutations(remainingChars)){
+//       permutationsArray.push(char + permutation) }
+//   }
+//   return permutationsArray
+// }
+
+// console.log(findPermutations('abc'))
+let array = [5, 1, 22, 25, 6, 1, 8, 10]
+let sequence =[1, 6, 1, 10]
+
+function isValidSubsequence(a, s) {
+  
+  let counter=0
+  for(let i=0;i<a.length;i++) {
+      if(a[i] === s[counter]) {
+        counter++
+      }
   }
-  return permutationsArray
+  return counter === s.length
 }
 
-console.log(findPermutations('abc'))
+console.log(isValidSubsequence(array,sequence))
