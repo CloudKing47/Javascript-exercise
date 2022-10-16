@@ -1,5 +1,5 @@
 // var arr=[1,1,2];
-// //create one object to keep track of value reapating 
+// //create one object to keep track of value reapating
 // //create counter to get the reapating count of number array
 // var trackObj={}
 // var unique=[]
@@ -44,7 +44,6 @@
 // var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
 // console.log([].concat.apply([],a))
 
-
 // var isAnagram = function(s, t) {
 //     let a=s.split('').sort().join('');
 //     let b=t.split('').sort().join('');
@@ -54,7 +53,6 @@
 
 // console.log(isAnagram("anagram",
 // "nagaram"))
-
 
 // /bind polyfill
 
@@ -76,16 +74,11 @@
 //     console.log("hi my name is " + this.name + "i lived in " ,arguments[0]  + arguments[1])
 // }
 
-
 // var callie= callName.bind(obj,"belgaum","bangalore")
 
 // console.log(callie())
 
-
-
-
 //polyfill for map
-
 
 // Array.prototype.mymap=function(callback) {
 //     var arr=[];
@@ -95,7 +88,6 @@
 //     }
 //     return arr;
 // }
-
 
 // function balaceParanthesis(arr) {
 
@@ -116,14 +108,14 @@
 //         switch(x) {
 //             case ')' :
 //                 check = stack.pop();
-//                 if(check === "{" || check === "[") 
+//                 if(check === "{" || check === "[")
 //                     return false
-                
+
 //                 break;
 
 //                 case '}' :
 //                     check = stack.pop();
-//                     if(check === "(" || check === "[") 
+//                     if(check === "(" || check === "[")
 //                         return false
 //                     break;
 
@@ -135,14 +127,11 @@
 
 //     }
 
-   
 // }
 // return (stack.length === 0)
 // }
 
 // console.log(balaceParanthesis("[}]"))
-
-
 
 //debounce
 
@@ -151,7 +140,7 @@
 
 //  return function() {
 //      context=this;
-//         args=arguments; 
+//         args=arguments;
 
 //         clearTimeout(debounTimer);
 //         debounTimer = setTimeout(()=> fn.apply(context,delay))
@@ -185,7 +174,6 @@
 
 // console.log(infinteCurring(1)(1)(3)())
 
-
 //avg sum
 
 // var arr=[1,2,4,3,5,6];
@@ -193,14 +181,13 @@
 // const Avg= arr.reduce((prev,curr)=> prev+curr) /(arr.length);
 // console.log("🚀 ~ file: commonfile.js ~ line 193 ~ Avg", Avg)
 
-
 // var str='tanush meghraj patil';
 
 // function CapfirstLetter(str) {
 //        let cap=str.split(' ')
 //        let updatedStr=[]
 //        for(let i=0;i<cap.length;i++) {
-            
+
 //         updatedStr.push(cap[i].charAt(0).toUpperCase() + cap[i].substring(1))
 //         }
 //         return updatedStr;
@@ -225,7 +212,6 @@
 // console.log(anagram(strs))
 
 // var str="meghraj";
-
 
 // function evenPo(str) {
 //     for(let i=0;i<str.length;i++) {
@@ -259,7 +245,6 @@
 // }
 // console.log(findMixMax(arr))
 
-
 // var s = "memghraj";
 
 // function findFirstUnique(s){
@@ -277,7 +262,7 @@
 //         if(obj[s[i]] === 1) {
 //             return i
 //         }
-        
+
 //     }
 //     return -1
 // }
@@ -287,9 +272,9 @@
 // var arr= [[1, 2],[3, 4],[5, 6, 7, 8, 9],[10, 11, 12, [13, 14]]];
 // let flatArray=[]
 // function flatArrFun(arr) {
-   
+
 //     for(let i=0;i<arr.length;i++) {
-//         if(Array.isArray(arr[i]))  
+//         if(Array.isArray(arr[i]))
 //         {
 //             flatArrFun(arr[i])
 //         } else{
@@ -308,7 +293,6 @@
 
 // console.log(infinitCurring(1)(2)())
 
-
 //throtalling
 
 // const throtalling =(func,delay)=>{
@@ -316,7 +300,7 @@
 //     let prev=0;
 //     return function(...args) {
 //         let now= new Date().getTime();
-//         if(prev-now > delay) 
+//         if(prev-now > delay)
 //         {
 //             prev=now;
 //             return func(...args)
@@ -324,18 +308,15 @@
 //     }
 // }
 
-
 // function reverseInt(n) {
 //     let nums = Math.abs(n).toString().split('').reverse().join('')
 //     console.log("🚀 ~ file: commonfile.js ~ line 330 ~ reverseInt ~ nums", nums)
-    
+
 // }
 
 // reverseInt(-123)
 
-
 //mergesort
-
 
 // function mergeFinal(a,b) {
 //     let c=[];
@@ -365,14 +346,12 @@
 //     const sort_right = divideMergeSort(right)
 
 //     return mergeFinal(sort_ledt,sort_right)
- 
+
 // }
 
 // console.log(divideMergeSort([4,2,5,6,1]))
 
-
 // var arr=[3,1,7];
-
 
 // function missingNumber(arr) {
 //     let missNbr=[]
@@ -387,10 +366,8 @@
 // }
 // console.log(missingNumber(arr));
 
-
-
 // Array.prototype.myMap= function(callback) {
-//   var arr=[]; 
+//   var arr=[];
 
 //   for(let i=0;i<this.length;i++) {
 //     arr.push(callback(this[i],this,i))
@@ -418,13 +395,10 @@
 
 // console.log(JSON.stringify(sampleObj))
 
-
 // const objKey= Object.keys(obj) ;
 
-  
-
 //     for(let i=0;i<objKey.length;i++) {
-      
+
 //         const findPosSplit= objKey[i].split('');
 //         const findIndexS=findPosSplit.findIndex((item)=> item ==='_')+1
 //         console.log("🚀 ~ file: commonfile.js ~ line 419 ~ balaceParanthesis ~ findPos", findPosSplit[findIndexS].toUpperCase())
@@ -433,7 +407,6 @@
 //     const objKey1= Object.keys(obj).map((item,index)=>{
 //         console.log("asdasdsad",item)
 //     }) ;
-
 
 // console.log(objKey)
 
@@ -448,18 +421,13 @@
 //         obj[nums[i]]++;
 //         isTwice =true
 //        }
-     
+
 //    }
 //    return isTwice
 
-   
 // };
 
 // console.log(containsDuplicate(nums))
-
-
-
-
 
 // function maxSum( arr, n, k){
 // 	// Initialize result
@@ -484,19 +452,16 @@
 // let n = arr.length;
 // console.log(maxSum(arr, n, k));
 
-
-
 // const promise =new Promise((resolve ,reject)=>{
 // 	if(true) {
 // 		resolve('suceess')
 // 	}
-	
+
 // 	else {
 // 		reject('failed')
 // 	}
-	
-// })
 
+// })
 
 // promise.then((res)=>{
 // 	console.log(res)
@@ -505,7 +470,7 @@
 // })
 
 // var isPalindrome = function(x) {
-    
+
 //     let stringCon='' + x
 //    let reveseVal= parseInt(stringCon.split('').reverse().join(''))
 //    console.log("🚀 ~ file: commonfile.js ~ line 511 ~ isPalindrome ~ reveseVal", reveseVal)
@@ -518,20 +483,17 @@
 // var nums = [2,7,11,15]
 // var target = 9;
 
-
 // function twoSum(nums,target) {
-// 	let obj={} 
+// 	let obj={}
 
 // for(let i=0;i<nums.length;i++){
 // 	if(obj[nums[i]] !== undefined) return [obj[nums[i]],i]
 // 	 obj[target -nums[i]] = i
 // }
 // return obj;
-// } 
+// }
 
 // console.log(twoSum(nums,target))
-
-
 
 // const throttal =(func,delay)=>{
 // 	 let prev=0
@@ -556,12 +518,10 @@
 // }
 // }
 
-
-
 // function plusOne(digits) {
-	
+
 // 	for(let i=digits.length;i--;) {
-		
+
 // 		digits[i] =1+digits[i];
 // 		console.log("🚀 ~ file: commonfile.js ~ line 566 ~ plusOne ~ digits", digits)
 // 		if(digits[i] === 10) {
@@ -570,7 +530,6 @@
 // 			return digits
 // 		}
 // 		digits.unshift(1)
-	
 
 // 	}
 // 	return digits
@@ -578,21 +537,19 @@
 
 // console.log(plusOne([9]))
 
-
 // function movingZerosToEnd(arr) {
 // let allZeros=[]
 // 	for(let i=0;i<arr.length;i++) {
 // 		if( arr[i] === 0) {
-			
+
 // 			allZeros.push(arr[i])
 // 			arr.splice(i,1)
-		
-// 		} 
+
+// 		}
 
 // 	}
 // 	console.log([...arr,...allZeros])
 // }
-
 
 // console.log(movingZerosToEnd([0,1,0,3,12]))
 
@@ -601,7 +558,7 @@
 // 	let obj={}
 
 // 	for(let i=0;i<str.length;i++) {
-		
+
 // 		if(!obj[str[i]]) {
 // 			obj[str[i]] =1
 // 		} else {
@@ -626,8 +583,8 @@
 // function flatArray(flatArr){
 
 // 	for(let val of flatArr) {
-// 		if(Array.isArray(val)) 
-// 		 {flatArray(val)} 
+// 		if(Array.isArray(val))
+// 		 {flatArray(val)}
 // 		 else {
 // 		output.push(val)}
 // 	}
@@ -635,33 +592,28 @@
 // }
 // console.log(flatArray(flatA))
 
-
-
 // function prefix(strs) {
-    
+
 //     if(!strs[0] || strs.length == 1) return strs[0] || '' ;
-    
+
 //     let i=0;
 
 //     while(strs[0][i] && strs.every((w)=> w[i] === strs[0][i] ) ) {
-	
+
 // 		i++;
 // 	}
 
-  
-    
 //     return  strs[0].substring(0,i)
 // };
 
 // console.log(prefix(["flower","flow","flight"]))
-
 
 // Remove Duplicates from Sorted Array
 // var nums =[1,1,2]
 // var removeDuplicates = function(nums) {
 //     let i = 0;
 //     for (let j = 0; j < nums.length; j++) {
-//         if (nums[j] != nums[i]) 
+//         if (nums[j] != nums[i])
 //             nums[++i] = nums[j];
 //     }
 //     return ++i;
@@ -673,13 +625,13 @@
 // 	let count=0
 
 // 	for(let i=0;i<arr.length;i++) {
-		
+
 // 		if(!obj[arr[i]]) {
 // 			obj[arr[i]] =1
 // 			count++
 // 		} else {
 // 			obj[arr[i]]++;
-			
+
 // 		}
 // 	}
 //  console.log(arr)
@@ -687,7 +639,6 @@
 // }
 
 // console.log(removeDuplicates(nums))
-
 
 // var employeeId = 'abc123';
 // function foo(){
@@ -697,7 +648,6 @@
 // foo();
 // console.log(employeeId);
 
-
 // var arrs=[1,2,3,4,5,6,7];
 
 // function pair(arr) {
@@ -705,9 +655,9 @@
 // 	let mid=Math.floor(arr.length/2);
 
 // 	for(let i=0;i<=mid;i++) {
-		
+
 // 		pairArr.push([arr[i],arr.pop()])
-		
+
 // 	}
 
 // 	console.log(pairArr)
@@ -715,7 +665,6 @@
 // }
 
 // console.log(pair(arrs))
-
 
 // var str="hello how are you";
 
@@ -726,7 +675,6 @@
 
 // 	for(let i=0;i<splitStr.length;i++) {
 // 			ff.push(splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1))
-		
 
 // 	}
 // 	return ff.join(' ')
@@ -734,19 +682,17 @@
 
 // console.log(CapFirst(str))
 
-
 // var str="helloworld";
 
 // function firstHalf(str) {
 //     if(str.length <2) return str;
 //     len =Math.floor(str.length/2)
-   
+
 //     str.splice(0,len)
 //     console.log("🚀 ~ file: commonfile.js ~ line 743 ~ firstHalf ~ len", str)
 // }
 
 // console.log(firstHalf(str))
-
 
 // var arr=[5, 1, 22, 25, 6, -1, 8, 10];
 // var arr1=[4, 5, 1, 22, 25, 6, -1, 8, 10]
@@ -761,44 +707,41 @@
 
 // console.log(findSubset(arr,arr1))
 
-
-
 // var arr= [100, 50, 40, 20, 10] ;
 
+// function finalMergeSort(a,b) {
 
-// function finalMergeSort(a,b) { 
-   
 // 	let c=[];
-	 
+
 // 	 while(a.length && b.length) {
-// 	 	c.push(a[0] < b[0] ? b.shift() : a.shift()) 
+// 	 	c.push(a[0] < b[0] ? b.shift() : a.shift())
 // 	 }
-	 
+
 // 	 while(a.length) {
 // 	 	c.push(a.shift())
 // 	 }
-	 
+
 // 	 while(b.length) {
 // 	 c.push(b.shift())
 // 	 }
-	 
+
 // 	 return c;
 // }
 
 //  function mergS(arr) {
-      
+
 //       if(arr.length <2 ) return arr;
-      
+
 //       let mid = Math.floor(arr.length /2);
 //       let left = arr.slice( 0 , mid);
-//       let right= arr.slice(mid ,arr.length) 
-      
+//       let right= arr.slice(mid ,arr.length)
+
 //       let  a_l = mergS(left);
 //       let b_l = mergS(right)
-      
+
 //       return finalMergeSort(a_l,b_l)
 //   }
-  
+
 //   console.log(mergS(arr))
 
 // var a = [1000000001 ,1000000002 ,1000000003 ,1000000004 ,1000000005]
@@ -810,41 +753,37 @@
 
 // 	return sum
 // 	}
-	
 
-    // Write your code here
+// Write your code here
 // 	console.log(aVeryBigSum(a))
 // var strings=['ab','ab','abc'];
 // let queries=['ab','abc','bc'];
 
 // function lonelyinteger(strings,queries) {
-    // Write your code here
-	// const cc= [...strings,...queries]
+// Write your code here
+// const cc= [...strings,...queries]
 
-    // let obj={}
-    // for(let i=0;i<cc.length;i++) {
-    //     if(!obj[cc[i]]) {
-    //         obj[cc[i]]=1
-    //     } else {
-    //         obj[cc[i]]++
-    //     }
-    // }
-	// console.log(obj)
+// let obj={}
+// for(let i=0;i<cc.length;i++) {
+//     if(!obj[cc[i]]) {
+//         obj[cc[i]]=1
+//     } else {
+//         obj[cc[i]]++
+//     }
+// }
+// console.log(obj)
 
 // 	let results = [];
-    
+
 //     queries.forEach((query) => {
 //         results.push(strings.filter((string) => string === query).length);
 //     })
-    
-//     return results;
-	
 
+//     return results;
 
 // }
 
 // console.log(lonelyinteger(strings,queries))
-
 
 // let arr=[1 ,2 ,3 ,4 ,5];
 // let arr=[7 ,69 ,2 ,221 ,8974];
@@ -873,14 +812,11 @@
 // 	let remaining=numbers
 //   console.log("🚀 ~ file: commonfile.js ~ line 874 ~ createPhoneNumber ~ remaining", remaining)
 //   console.log("("+firtThree.join('').toString() + ")" +' ' + nextThree.join('').toString() +'-'+ remaining.join('').toString())
- 
+
 // }
 //  console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
-
-
 // var str="How can mirrors be real if our eyes aren't real";
-
 
 // function capitlizeFirst(str){
 // 		let splitStr=str.split(' ')
@@ -889,9 +825,9 @@
 //   for(let i=0;i<splitStr.length;i++) {
 
 // 		 capStr= splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1)
-		
+
 // 		 jordanString.push(capStr)
-	
+
 //   }
 //    return jordanString.join(' ');
 
@@ -907,9 +843,9 @@
 //   for(let i=0;i<splitStr.length;i++) {
 
 // 		 capStr= splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1)
-		
+
 // 		 jordanString.push(capStr)
-	
+
 //   }
 //    return jordanString.join(' ');
 
@@ -928,7 +864,6 @@
 
 // console.log(reverse(-123))
 
-
 // function twoSun(arr,target) {
 
 //     let obj={};
@@ -946,19 +881,17 @@
 // var a="hi"
 
 // if(true) {
-    
+
 //     var a="bye"
 //     console.log(a)
 // }
 
 // console.log(a)
 
-
 // function arrayDiff(a,b) {
 //     return a.filter((item,i)=> !b.includes(item))
 // }
 // console.log(arrayDiff([1,2,3],[1,2]))
-
 
 //even number first then followed by odd number
 // let arr=[7 ,69 ,2 ,221 ,8974];
@@ -976,11 +909,10 @@
 //             oddArr.push(arr[i])
 //         }
 //     }
-   
+
 //     return [...evenArr,...oddArr]
 // }
 // console.log(evenOddMerge(arr))
-
 
 // let str="megh@123)*&";
 
@@ -992,19 +924,17 @@
 //             }
 //         }
 
-
 //        let arr=[1,0,2,3,0,4,5,0]
 // var duplicateZeros = function(arr) {
-   
 
 //     for(let i=0;i<arr.length;i++) {
 //         if(arr[i] === 0) {
-         
+
 //           arr.splice(++i,0,0)
 //           arr.pop();
 //         }
 //     }
-  
+
 //   console.log(arr)
 
 // };
@@ -1022,10 +952,8 @@
 //       if(obj[a] !== undefined) return [array[obj[a]],array[i]]
 //        obj[targetSum - a] = i
 //     }
-  
 
 //   }
-
 
 //   function sortedSquaredArray(array) {
 //     // Write your code here.
@@ -1033,26 +961,22 @@
 //     array.sort((a,b)=> Math.abs(a) - Math.abs(b)).reduce((acc,curr)=>{
 //       return sqrArr.push(curr*curr);
 //     },0)
- 
+
 //     return sqrArr;
 //   }
 //   console.log(sortedSquaredArray(array))
 
-
 // let characters = "Bste!hetsi ogEAxpelrt x "
 // let document = "AlgoExpert is the Best!"
-
-
 
 // function isDocument(characters, document) {
 
 //     let cObj={};
 //     let dObj={};
-    
 
 //     for(let i=0;i<characters.length;i++) {
 //         let char=characters[i]
-//         if(cObj[char] === undefined) 
+//         if(cObj[char] === undefined)
 //         {
 //             cObj[char] = 1
 //         } else {
@@ -1062,44 +986,38 @@
 //     for(let i=0;i<document.length;i++) {
 //         let doc=document[i]
 //         dObj[doc]=dObj[doc] +1 || 1
-//         if(cObj[doc] ===undefined) 
+//         if(cObj[doc] ===undefined)
 //         {
 //            return false
-//         } 
+//         }
 //         if(dObj[doc] > cObj[doc]) {
 //             return false
 //         }
 //     }
 //   return true
 
-   
 // }
 
 // console.log(isDocument(characters,document))
 
-
 // function firstDuplicateValue(array) {
 //     // Write your code here.
 //       var obj={};
-      
+
 //       for(let i=0;i<array.length;i++) {
 //           if(obj[array[i]] === undefined) {
 //                obj[array[i]] =1;
-              
-       
+
 //           }else {
 //               obj[array[i]]++
 //               return array[i]
 //           }
 //       }
-   
-     
+
 //    return -1
 //   }
 
 //   console.log(firstDuplicateValue([6, 15, 7, 10, 9, 14, 10, 1, 10, 1, 2, 11, 1, 6, 8]))
-
-
 
 // function moveElementToEnd(array, toMove) {
 //     // Write your code here.
@@ -1112,12 +1030,11 @@
 //             movedArr.push(...array.splice(i,1))
 //             --i;
 //         }
-        
+
 //     }
 //    return [...array,...movedArr];
 //   }
 //   console.log(moveElementToEnd([2, 1, 2, 2, 2, 3, 4, 2],2))
-
 
 // let str="AlgoExpert is the best!"
 // function reverseWordsInString(str) {
@@ -1135,7 +1052,6 @@
 // }
 
 // console.log(arrayDiff([1,2,3],[1,2]))
-
 
 // Get the nth Fibonacci number in O(n) time and O(1) space complexity.
 //Javascript
@@ -1158,7 +1074,6 @@
 
 // megh[shiv]='patil';
 // megh[shiv2]='patil2';
-
 
 // console.log(megh[shiv])
 
@@ -1219,8 +1134,7 @@
 //   }
 // }
 
-// //  const x = a()();           
-
+// //  const x = a()();
 
 //  const x = a();
 //  console.log("🚀 ~ file: commonfile.js ~ line 1224 ~ x", x())
@@ -1240,27 +1154,55 @@
 
 // console.log(coo(str,str1))
 
-let findPermutations = (string) => {
-  if (!string || typeof string !== "string"){
-    return "Please enter a string"
-  } else if (string.length < 2 ){
-    return string
+// let findPermutations = (string) => {
+//   if (!string || typeof string !== "string"){
+//     return "Please enter a string"
+//   } else if (string.length < 2 ){
+//     return string
+//   }
+
+//   let permutationsArray = []
+
+//   for (let i = 0; i < string.length; i++){
+//     let char = string[i]
+
+//     if (string.indexOf(char) != i)
+//     continue
+
+//     let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
+
+//     for (let permutation of findPermutations(remainingChars)){
+//       permutationsArray.push(char + permutation) }
+//   }
+//   return permutationsArray
+// }
+
+// console.log(findPermutations('abc'))
+
+var arr1 = [7, 2, 1, 5, 4, 6, 8, 3];
+var target = 10;
+
+function pairCount(arr, target) {
+  let left = 0;
+  let right = arr.length - 1;
+  let pariArr = [];
+  let count = 0;
+
+  while (left < right) {
+    if (arr[left] + arr[right] === target) {
+      pariArr.push([arr[left], arr[right]]);
+      count++;
+    }
+
+    if (arr[left] + arr[right] > target) {
+      right--;
+    } else {
+      left++;
+    }
   }
-
-  let permutationsArray = [] 
-   
-  for (let i = 0; i < string.length; i++){
-    let char = string[i]
-
-    if (string.indexOf(char) != i)
-    continue
-
-    let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
-
-    for (let permutation of findPermutations(remainingChars)){
-      permutationsArray.push(char + permutation) }
-  }
-  return permutationsArray
+  console.log(count);
+  return pariArr;
 }
-
-console.log(findPermutations('abc'))
+let sortArr = arr1.sort();
+console.log("🚀 ~ file: commonfile.js ~ line 1207 ~ balaceParanthesis ~ sortArr", sortArr)
+console.log(pairCount(sortArr, target));
