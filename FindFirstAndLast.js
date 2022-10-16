@@ -1,7 +1,6 @@
 // Find First and Last Position of Element in Sorted Array
 
-let nums = [5,7,7,8,7,10]
-let target = 7
+
 
 // function findFirstAndLast(nums,target) {
 
@@ -32,7 +31,8 @@ let target = 7
 
 // console.log(findFirstAndLast(nums,target)) //this will faile in one digit array 
 
-
+let nums = [5,7,7,8,7,10]
+let target = 7
 
 //method 2
 var searchRange = function(nums, target) {

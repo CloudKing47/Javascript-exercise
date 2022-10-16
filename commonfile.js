@@ -1163,6 +1163,9 @@
 
 //   let permutationsArray = []
 
+
+//   let permutationsArray = [] 
+   
 //   for (let i = 0; i < string.length; i++){
 //     let char = string[i]
 
@@ -1206,3 +1209,26 @@ function pairCount(arr, target) {
 let sortArr = arr1.sort();
 console.log("🚀 ~ file: commonfile.js ~ line 1207 ~ balaceParanthesis ~ sortArr", sortArr)
 console.log(pairCount(sortArr, target));
+
+
+
+
+//isValidSubsequence
+let array = [5, 1, 22, 25, 6, 1, 8, 10]
+let sequence =[1, 6, 1, 10]
+
+
+
+
+function isValidSubsequence(a, s) {
+  
+  let counter=0
+  for(let i=0;i<a.length;i++) {
+      if(a[i] === s[counter]) {
+        counter++
+      }
+  }
+  return counter === s.length
+}
+
+console.log(isValidSubsequence(array,sequence))
